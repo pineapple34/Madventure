@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:background="@color/gray"
+    tools:context=".ResultActivity"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/inner_frame_layout_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/aquamarine"
+                android:text="Go To \n WorldSkills 2019"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:text="10.000 steps"
+                android:textColor="@color/aquamarine"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/ic_baseline_directions_walk_24"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Description"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/aquamarine"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus metus at eleitend porttitor. Sed et urna ut nulla condimentum laoreet. Duis et velit ut leo varius blandit. Curabitur accumsan nisi eu leo tristique sollicitudin. Praesent vulputate odio ut porta a sollicitudin, Ut accumsan elit elit orci, in congue turpis posuere ас."
+                android:textAlignment="textStart"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/button_send"
+                android:onClick="take_results"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"
+                android:text="Send results" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>
